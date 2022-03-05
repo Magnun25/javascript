@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de boas vindas</title>
+    <style>
+        body {
+            font: 12pt Arial;
+            background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.274), rgba(0, 0, 0, 0.384));
+        }
+        button {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seja bem vindo!</h1>
+    <button onclick="cliquei()">Inicie o desafio.</button>
+    <script>
+        function cliquei() {
+            let nome = window.prompt('Oi. Qual é o seu nome?')
+            let idade = window.prompt(`Muito prazer ${nome}, e quantos anos você tem?`)
+            window.alert(`Legal. Acabei de conhecer ${nome} de ${idade} anos de idade.`)
+        }
+    </script>
+</body>
+</html>
