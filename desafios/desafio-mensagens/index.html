@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 JS</title>
+    <style>
+        body {
+            font: bold Arial;
+            background:blue url(background.jpeg) no-repeat center / cover fixed;
+        }
+
+        button {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.301);
+            color: white;
+            font: 500 20px Arial;
+        }
+        button#b1 {
+            background-color: rgb(100, 0, 0);
+        }
+        button#b2 {
+            background-color: rgb(0, 100, 0);
+        }
+        button#b3 {
+            background-color: rgb(0, 0, 100);
+        }
+        div {
+            display: flex;
+            justify-content: space-around;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Interagindo com JavaScript</h1>
+    <div>
+        <button id="b1" onclick="clicou1()">Clique em mim!!</button>
+        <button id="b2" onclick="clicou2()">Clique em mim!!</button>
+        <button id="b3" onclick="clicou3()">Clique em mim!!</button>
+    </div>
+    <script>
+        function clicou1() {
+            window.alert('Você clicou no botão vermelho!!')
+        }
+        function clicou2() {
+            window.alert('Você clicou no botão verde!!')
+        }
+        function clicou3() {
+            window.alert('Você clicou no botão azul!!')
+        }
+    </script>
+</body>
+</html>
