@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre o DOM</title>
+    <style>
+        body {
+            background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.200));
+            font: normal 16pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Estou aprendendo sobre DOM</h1>
+    <p>DOM significa Document Object Model</p>
+    <p>Básicamente são modelos de elementos que estão dentro do navegador.</p>
+    <h2>Árvore DOM</h2>
+    <p>Começa na Raíz window e se estende por diversos elementos formando uma hierarquia.</p>
+    <script>
+
+        var corpo = window.document.body
+        var model = document.getElementsByTagName('p')[2]
+        var tit = window.document.getElementsByTagName('h1')[0]
+        model.style.color= 'blue'
+        corpo.style.background = 'linear-gradient(90deg, lightgreen, white)'
+        document.write('O título é : ' + tit.innerText)
+
+    </script>
+</body>
+</html>
