@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 JS</title>
+</head>
+<body>
+    <h1>Qual é o seu país de origem?</h1>
+    <input type="text" id="pais" nome="pais">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar() {
+            var pais = document.getElementById('pais').value // Há diferença entre gravar o valor na variável e só gravar o DOM ou seja se eu quero colocar o que está dentro do input eu devo usar value
+            var res = document.getElementById('res')
+            var paismin = pais.toLowerCase()
+            if (paismin == 'brasil') { 
+                res.innerHTML = `<p>Você mora no Brasil e é Brasileiro</p>`
+            } else {
+                res.innerHTML = `<p>Você mora no ${pais} e é Estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
