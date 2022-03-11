@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body{
+            font: normal 12pt arial;
+        }
+        button {
+            font-size: 16px;
+            width: 200px;
+            height: 100px;
+        }
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="clicou()">Clique para calcular</button>
+    <div id="res">O resultado vem aqui...</div>
+    <script>
+        window.alert('Seja bem-vindo(a) ao meu site!')
+        function clicou() {
+            var txtn1 = window.prompt('Digite um número:')
+            var n1 = Number(txtn1) // Neste caso só precisei colocar a variavel, algumas vezes precisei colocar .value ao lado
+            var res = document.querySelector('div#res')
+            var dobro = n1 * 2
+            var metade = n1 / 2
+            res.innerHTML = `O dobro de ${n1} é ${dobro} e a metade é ${metade}!`
+        }
+    </script>
+</body>
+</html>

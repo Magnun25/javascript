@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação JS</title>
+    <style>
+        body{
+            font: normal 12pt arial;
+        }
+        button {
+            font-size: 16px;
+            width: 200px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Interagindo com um botão</h1>
+    <button onclick="clicou()">Clique em mim!</button> 
+    <script>
+        function clicou() {
+            window.alert('Você clicou no botão!')
+        }
+    </script>
+</body>
+</html>
+<!-- Não usar palavras ja exixtentes como tags, e atributos como nome de função ex: click... não funcionou com click -->
