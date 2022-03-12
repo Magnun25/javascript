@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Vários cálculos em JS</title>
+    <style>
+        body {
+            font: normal 16px Arial;
+        }
+
+        button {
+            width: 200px;
+            height: 80px;
+            font-size: 16px;
+        }
+        div#res p {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+            padding-bottom: 10px;
+        }
+
+    </style>
 </head>
 <body> 
     <h1>Vários cálculos em JS</h1>
     <button onclick="clicou()">Clique para calcular</button>
     <div id="res">O resultado vai ser aqui...</div>
+    <section id="res2"></section>
     <script>
         function clicou() {
-            
+            var txtn = window.prompt ('Digite um número:')
+            var res = document.querySelector('div#res')
+            var res2 = document.querySelector('section#res2')
+            var n = Number(txtn)
+            var abs = Math.abs(n)
+            var int = Math.trunc(n)
+            var arred = Math.round(n)
+            var quad = Math.sqrt(n)
+            var cub = Math.cbrt(n)
+            var aoquad = Math.pow(n,2)
+            var aocub = Math.pow(n,3)
+            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${n}</strong></p>`
+            res2.innerHTML = `<p>O seu valor absoluto é ${abs}</p> <p>A sua parte inteira é ${int}</p> <p>O valor inteiro mais próximo é ${arred}</p> <p>A sua raiz quadrada é ${quad}</p> <p>A sua raiz cúbica é ${cub}</p> <p>O valor de ${n}<sup>2</sup> é ${aoquad}</p> <p>O valor de ${n}<sup>3</sup> é ${aocub}</p>`
         }
+
+        // Posso usar a fórmula matemática diretamente no paragráfo dentro do ${} sem criar várias variáveis
+
     </script>
 </body>
 </html>
