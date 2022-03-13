@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+    <style>
+        body {
+            font: normal 16px Arial;
+        }
+        button {
+            width: 180px;
+            height: 80px;
+            font-size: 16px;
+        }
+        p#destaque {
+            font: normal bold 20px Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Conversor R$ -> US$</h1>
+    <button onclick="convert()">Converter</button>
+    <section id="res">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        var txtcota = window.prompt(`Antes de mais nada. Quanto está a cotação do dolar agora?`)
+        var cota = Number(txtcota)
+        
+        function convert() {
+            var txtwallet = window.prompt(`Quantos R$ você tem na carteira?`)
+            var wallet = Number(txtwallet)
+            var walletus = wallet/cota
+            var res = document.getElementById('res')
+            res.innerHTML =`<p id="destaque">A quantia de ${wallet.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})} equivale a ...</p>`
+            res.innerHTML +=`<p>${walletus.toLocaleString('pt-BR', {style:'currency', currency:'USD'})}</p>`
+        }
+    </script>
+</body>
+</html>
