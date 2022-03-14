@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px Arial;
+}
+button {
+    font-size: 16px;
+    width: 180px;
+    height: 80px;
+}
+p#destaque {
+    font: normal bold 20px arial;
+}
