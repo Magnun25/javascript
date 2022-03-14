@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Situação do Aluno</h1>
+    <button onclick="clicou()">Entrar com as notas</button>
+    <section id="res">
+        <p>Clique no botão acima para informar as notas do aluno.</p>
+    </section>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="colgroup">Média</th>
+                <th scope="colgroup">Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Abaixo de 3,0</td>
+                <td id="reprovado">Reprovado</td>
+            </tr>
+            <tr>
+                <td>Entre 3,0 e 6,0</td>
+                <td id="recuperacao">Recuperação</td>
+            </tr>
+            <tr>
+                <td>Acima de 6,0</td>
+                <td id="aprovado">Aprovado</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
