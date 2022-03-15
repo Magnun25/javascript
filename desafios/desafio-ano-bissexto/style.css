@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px Arial;
+}
+button {
+    width: 180px;
+    height: 80px;
+    font-size: 16px;
+}
+
+p#destaque {
+    font: normal 24px arial;
+}
+
+span#e {
+    background-color: rgba(44, 204, 44, 0.514);
+    color: rgb(0, 80, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
+span#naoe {
+    background-color: rgba(206, 45, 45, 0.514);
+    color: rgb(80, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
