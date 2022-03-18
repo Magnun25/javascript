@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px Arial;
+    background-color: rgb(94, 131, 185);
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+section {
+    background-color: white;
+    padding: 40px 20px 5px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+    text-align: left;
+    margin: auto;
+    width: 500px;
+}
+input#ano {
+    width: 100px;
+}
+
+div#container-1 {
+    margin-bottom: 20px;
+}
+
+input#but {
+    width: 100px;
+    height: 30px;
+    margin: 20px 0px 20px 0px;
+}
+
+footer {
+    color: white;
+}
