@@ -6,5 +6,5 @@ function somar() {
 }
 function zerar() {
     somador = 0
-    cont.innerHTML = null
+    cont.innerHTML = `<p>O contador está com <mark>${somador}</mark> cliques.</p>`
 }
