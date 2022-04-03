@@ -22,6 +22,10 @@
             margin: auto;
             text-align: left;
         }
+        select {
+            margin-top: 30px;
+            padding: 10px;
+        }  
         h1 {
             color: white;
             margin-bottom: 30px;
@@ -46,16 +50,15 @@
             <input id="number" type="number">
             <button onclick="calcular()">Calcular</button>
         </div>
-        <div>
-            <table>
-                <th></th>
-
-            </table>
+        <div id="diferent">
+            <select name="tabuada" id="lookTab" size="11">
+                <option value="xnull">Digite um número acima</option>
+            </select>
         </div>
     </section>
     <footer>
         &copy; CursoemVideo
     </footer>
-    <script src="script.js"></script>
+    <script src="calcular.js"></script>
 </body>
 </html>
