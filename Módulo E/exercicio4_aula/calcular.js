@@ -20,18 +20,19 @@ function calcular() {
 
 // Jeito novo de Criar elementos
 
-function calcular() {
+function tabuada() {
     let numberTxt = document.querySelector('input#number')
-    let lookTab = document.getElementeByID('lookTab')
+    let lookTab = document.querySelector('select#lookTab')
     if (numberTxt.value.length == 0) {
         window.alert(`Por Favor digite um número!`)
     } else {
         let number = Number(numberTxt.value)
         let i = 0
-        tab.innerHTML = ``
+        lookTab.innerHTML = ``
         while (i <= 10) {
             let item = document.createElement('option')
             item.text = `${number} x ${i} = ${number * i}`
+            item.value = `x${i}`
             lookTab.appendChild(item)
             i++
         }

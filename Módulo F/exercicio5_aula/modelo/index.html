@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>Analisador de Números</title>
     <style>
         @charset "UTF-8";
         body {
@@ -14,18 +14,26 @@
         }
         section {
             background-color: rgb(236, 236, 236);
-            width: 400px;
+            width: 500px;
             padding: 20px;
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             margin: auto;
-            text-align: left;
+            text-align:left
         }
         select {
-            margin-top: 30px;
-            padding: 10px;
-        }  
+            margin-top: 20px;
+            width: 150px;
+            text-align: center;
+
+        }
+        option {
+            margin: 5px;
+        }
+        button#finish {
+            margin-top: 10px
+        }
         h1 {
             color: white;
             margin-bottom: 30px;
@@ -42,23 +50,26 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Analisador de Números</h1>
     </header>
     <section>
         <div>
-            <label for="number">Número: </label>
-            <input id="number" type="number">
-            <button onclick="tabuada()">Calcular</button>
+            <label for="num">Número (entre 1 e 100): </label>
+            <input type="num" min="1" max="100" id="num" name="num" autofocus>
+            <button onclick="adicionar()">Adicionar</button>
         </div>
         <div>
-            <select name="tabuada" id="lookTab" size="11">
-                <option value="xnull">Digite um número acima</option>
-            </select>
+            <select name="array" id="array" size="10">
+            </select><br>
+            <button id="finish" onclick="result()">Finalizar</button>
+        </div>
+        <div id="res">
+
         </div>
     </section>
     <footer>
         &copy; CursoemVideo
     </footer>
-    <script src="calcular.js"></script>
+    <script src="exercicio.js"></script>
 </body>
 </html>
